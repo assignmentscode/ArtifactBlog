@@ -1,68 +1,78 @@
-body {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+body, html {
+    height: 100%;
+    width: 100%;
     font-weight: 10;
-}
-nav p {
+  }
+  .content-width {
+    width: 70%;
+    margin: auto;
+  }
+  header {
+    background-color: black;
+  }
+  nav p {
     color: aliceblue;
     font-size: 26px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    border-bottom: 0px;
-    margin-left: 20%;
-}
-.heading-content {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  nav li {
+    color: aliceblue;
+    margin-left: 10%;
+  }
+  .heading-content {
     color: aliceblue;
     font-size: 20px;
-    padding-top: 0px;
-    margin-top: 0px;
-    border-top: 0px;
+    margin: 0%;
+    padding: 0%;
     font-style: italic;
-    margin-left: 20%;
-}
-nav table {
-    float : right;
-    margin-right: 15%;
-}
-nav th {
+  }
+  footer {
+    background-color: black;
     color: aliceblue;
-    font-size: 14px;
-    padding: 0 80px 0 80px;
-}
-footer {
-    color: aliceblue;
-    margin-left: 20%;
-}
-.div-blogs {
-    margin: 1.5% 0% 1% 0%;
-    background-color: aliceblue;
-    padding-right: 10%;
-    padding-left: 15%;
-    padding-bottom: 3%;
-    align-content: center;
-}
-.date {
+    height: 10%;
+    vertical-align: middle;
+  }
+  .div-blogs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    align-content: space-between;
+    flex: 1 0 calc(33.333% - 20px);
+  }
+  .date {
     margin: 0;
     float: left;
     font-size: 12px;
     color: gray;
-}
-.read-time {
+  }
+  .read-time {
     margin :0;
     float:right;
     font-size: 12px;
     color: gray;
-}
-
-
-.card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    max-width: 280px;
-    margin: 15px 55px;
+  }
+  
+  
+  .card {
+    /* max-width: 280px; */
+    flex-basis: 300px;
+    align-self: flex-start;
     text-align: center;
     font-family: arial;
-    display: inline-block;
-    vertical-align: top;
     border : 0.2px solid gray;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .title {
@@ -70,7 +80,7 @@ footer {
     font-size: 18px;
   }
   .blog-image {
-      width : 280px;
+      width : 300px;
       height: 220px;
   }
   
@@ -117,4 +127,3 @@ footer {
   hr {
       margin: 8px 10px;
   }
-  

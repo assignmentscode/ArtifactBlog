@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Intro to CSS</title>
+        <title>Art Blog</title>
         <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="content-width">
                 <p>The Artifact</p>
                 <p class="heading-content">Culture & Art blog</p>
-                <table>
-                    <th>Blog</th>
-                    <th>About</th>
-                    <th>Contact</th>
-                </table>
+                <ul> 
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+                </ul>
             </nav>
         </header>
-        <div class="div-blogs">
+        <div class="div-blogs content-width">
             <br/>
 
            <div class="card">
@@ -55,10 +55,12 @@
             </figcaption>
             <p class="post-heading">10 young painters you need to know</p>
             <p class="blog-content">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...</p>
-            <hr/>
-            <img src="./Icons/clapping.svg" class="clap-logo">
-            <span class="clap-count">15</span>
-            <img src="./Icons/heart-black.svg" class="heart-logo">
+            <div class="testing">
+                <hr/>
+                <img src="./Icons/clapping.svg" class="clap-logo">
+                <span class="clap-count">15</span>
+                <img src="./Icons/heart-black.svg" class="heart-logo">
+            </div>
             </div>
 
             <div class="card">
@@ -81,7 +83,7 @@
                 <span class="date">4th Feburary, 2019</span>
                 <span class="read-time">9 mins</span>
             </figcaption>
-            <p class="post-heading">Stay inspired: top artists blog ...</p>
+            <p class="post-heading">Stay inspired: top artists blog</p>
             <p class="blog-content">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...</p>
             <hr/>
             <img src="./Icons/clapping.svg" class="clap-logo">
@@ -104,6 +106,10 @@
             </div>
 
         </div>
-        <footer>&copy; artifact.com 2019</footer>
+        <footer>
+            <article class="content-width">
+                &copy;artifact.com 2019
+            </article>
+        </footer>
     </body>
 </html>
